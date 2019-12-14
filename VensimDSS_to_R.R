@@ -3,9 +3,7 @@ library(stringr)
 library(dplyr)
 library(readr)
 
-setwd("C:/Users/john.caddell/OneDrive - West Point/ORCEN/DIA/toy_model")
-
-text <- read_delim("toy_model_text.txt", delim = "\t", col_names = FALSE, trim_ws = TRUE, skip_empty_rows = TRUE)
+text <- read_delim("yourfilehere.txt", delim = "\t", col_names = FALSE, trim_ws = TRUE, skip_empty_rows = TRUE)
 
 text <- text %>% na.omit()
 
